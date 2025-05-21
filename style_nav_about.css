@@ -1,0 +1,87 @@
+* {
+    font-family: "Montserrat";
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 125, 234);
+    animation: bounceIn 1s ease-out;
+    will-change: transform, opacity;
+}
+
+h1 {
+    font-weight: 590; /* Properti font-weight mengatur ketebalan teks. */
+    font-size: 50px;  /* Properti font-size digunakan untuk menentukan ukuran teks. */
+    text-align: center;
+    color: rgb(74, 116, 194);
+    margin-top: -200px;
+}
+
+.content {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(74, 116, 194);
+    max-width: 800px;
+    margin: 0;
+    transition: 1.5s;
+}
+
+.content:hover {
+    cursor: default;
+    transform: scale(1.1);
+}
+
+.boxshadow {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@keyframes bounceIn { /* membuat animasi awal seperti ada pantulan di header */
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    35% {
+        opacity: 0.25;
+        transform: translate3d(0, 10px, 0);
+    }
+    70% {
+        opacity: 0.5;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+  }
+
+  a {
+    transition: 0.7s;
+  }
+
+  a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }

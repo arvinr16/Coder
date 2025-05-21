@@ -1,0 +1,529 @@
+* { /* = (*) disebut universal selector (selektor universal). 
+       Fungsinya adalah untuk memilih semua elemen dalam dokumen HTML, 
+       sehingga aturan CSS yang diterapkan akan berlaku untuk semua elemen di halaman. */
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 590; /* Properti font-weight mengatur ketebalan teks. */
+    font-size: 48px;  /* Properti font-size digunakan untuk menentukan ukuran teks. */
+    margin-top: 0 0 16px 0;
+    
+}
+
+.h1-header {
+    color: white;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500; 
+    font-size: 24px; 
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    color: #979797;
+    margin: 0 0 16px 0;
+}
+
+section {
+    padding: 64px 128px;
+}
+
+.btn { /* Dalam CSS, tanda titik (.) digunakan untuk memanggil class yang telah didefinisikan di dalam HTML. 
+          Class memungkinkan Anda menerapkan gaya tertentu ke satu atau lebih elemen tanpa mempengaruhi elemen lainnya. 
+          Catatan Tambahan
+          - Satu elemen bisa memiliki banyak class dengan memisahkan nama class menggunakan spasi 
+          - Memanggil lebih dari satu class dalam satu selector
+            Anda bisa menargetkan beberapa class sekaligus dalam satu aturan CSS*/
+    background-color: rgb(66, 125, 234);
+    color: white;
+    padding: 10px 20px; /* Padding adalah ruang di dalam elemen, antara konten dan border. 
+                           Efeknya: Konten akan memiliki jarak dari batas dalam elemen, 
+                           tapi ukuran total elemen akan bertambah jika box-sizing: content-box; digunakan. */
+    transition: 0.7s;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-alt {
+    background-color: white;
+    color: black;
+    margin-right: 10px; /* Margin adalah ruang di luar elemen, digunakan untuk memberi jarak antar elemen lain. 
+                           Efeknya: Elemen akan menjauh dari elemen lain tanpa mempengaruhi ukuran elemen itu sendiri. */
+
+    border: 2px solid rgb(66, 125, 234); /* Border adalah garis yang mengelilingi elemen, berada di antara padding dan margin. 
+                                              Efeknya: Elemen akan memiliki garis tepi dengan ketebalan dan warna tertentu. */
+}
+
+.button-landing {
+    gap: 10px; /* Beri jarak antar tombol */
+}
+
+#header {
+    display: flex; /* Properti "display" digunakan untuk menentukan bagaimana sebuah elemen akan ditampilkan di halaman web.
+                      Nilai umum "display" :
+                      block → Elemen tampil sebagai blok penuh (memenuhi lebar parent).
+                      inline → Elemen tampil sebaris, tanpa memulai baris baru.
+                      inline-block → Seperti inline, tetapi bisa memiliki tinggi dan lebar.
+                      none → Elemen tidak ditampilkan sama sekali.
+                      flex → Mengaktifkan Flexbox untuk tata letak yang fleksibel.
+                      grid → Mengaktifkan Grid Layout untuk pengaturan berbasis grid. */
+
+    align-items: center; /* Properti "align-items" digunakan untuk mengatur posisi elemen dalam sumbu sekunder 
+                            (vertikal dalam Flexbox default). 
+                            Nilai umum "align-items" : 
+                            stretch → Elemen akan mengisi seluruh tinggi parent (default).
+                            flex-start → Elemen sejajar ke atas.
+                            flex-end → Elemen sejajar ke bawah.
+                            center → Elemen sejajar di tengah secara vertikal.
+                            baseline → Elemen sejajar berdasarkan teks dasarnya. */
+
+    justify-content: space-between; /* Properti "justify-content" digunakan dalam Flexbox dan Grid 
+                                       untuk mengatur posisi elemen dalam sumbu utama (horizontal dalam Flexbox default).
+                                       Nilai umum "justify-content" :
+                                       flex-start → Elemen sejajar ke kiri (default).
+                                       flex-end → Elemen sejajar ke kanan.
+                                       center → Elemen sejajar di tengah.
+                                       space-between → Elemen berjauhan dengan jarak maksimal di antaranya.
+                                       space-around → Elemen memiliki jarak seimbang di kedua sisinya.
+                                       space-evenly → Jarak antar elemen benar-benar sama rata. */
+    padding: 16px 128px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(66, 125, 234);
+    z-index: 1;
+    animation: bounceIn 1s; /* pemanggilan animasi pantulan dari @keyframes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* membuat animasi saat cursor di arahkan ke header akan ada bayangan di bawahnya */
+}
+
+@keyframes bounceIn { /* membuat animasi awal seperti ada pantulan di header */
+    0% {
+        filter: opacity(0);
+        transform: translateY(-20px);
+    }
+    35% {
+        filter: opacity(0.25);
+        transform: translateY(0);
+    }
+    70% {
+        filter: opacity(0.5);
+        transform: translateY(10px);
+    }
+    100% {
+        filter: opacity(1);
+        transform: translateY(0);
+    }
+  }
+
+#header:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* membuat animasi saat cursor di arahkan ke header akan ada bayangan di bawahnya */
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px; /* Properti column-gap digunakan untuk mengatur jarak horizontal (celah) 
+                         antara kolom dalam tata letak berbasis CSS Grid, Flexbox, atau Multi-column Layout. */
+}
+
+#landing p {
+    margin-bottom: 25px;
+}
+
+#landing > div {
+    width: 50%;
+}
+
+/* nav > a { (ini untuk membuat animasi pada teks, 
+              agar bisa berubah warna ketika cursor 
+              di arahkan teks tersebut)
+    color: white;
+    margin-left: 10px;
+    transition: ease-in-out 0.5s; (animasi transisi)
+}
+
+nav > a:hover {
+    color: black;
+    opacity: 0.5;  (Teks akan sedikit transparan) 
+} */
+
+nav > a { /* ini untuk membuat teks menjadi mempunyai efek animasi melebar saat di arahkan ke teks tersebut */
+    color: white;
+    margin-left: 10px;
+    font-weight: normal;
+    transition: font-weight 0.3s ease-in-out, letter-spacing 0.3s ease-in-out; /* Properti transition dalam CSS digunakan 
+                                                                                  untuk membuat animasi perubahan nilai properti CSS 
+                                                                                  secara halus (smooth) dalam jangka waktu tertentu. 
+                                                                                  Ini berguna untuk meningkatkan user experience (UX) 
+                                                                                  tanpa memerlukan JavaScript atau library tambahan. */
+}
+
+nav > a:hover {
+    color: rgb(241, 241, 241);
+    font-weight: bold; /* Huruf jadi tebal */
+    letter-spacing: 3px; /* Huruf melebar */
+}
+
+/* Combinatior CSS
+   1. ~ Descendant combinator digunakan untuk memilih elemen yang berada di dalam elemen lain, tanpa memperhatikan level kedalamannya.
+   div p {
+  color: blue;
+}
+   Semua <p> yang berada di dalam <div>, baik langsung maupun dalam elemen lain yang bersarang, akan dipilih.
+   Tidak peduli apakah <p> adalah anak langsung dari <div> atau berada dalam elemen lain di dalam <div>.
+   <div>
+   <p>Ini akan berwarna biru.</p>
+   <section>
+   <p>Ini juga akan berwarna biru.</p>
+   </section>
+   </div>
+
+   2. ~ Child combinator digunakan untuk memilih elemen yang hanya merupakan anak langsung dari elemen tertentu.
+   div > p {
+  color: red;
+}
+   Hanya <p> yang merupakan anak langsung dari <div> yang akan dipilih.
+   Jika <p> berada dalam elemen lain di dalam <div>, maka tidak akan dipilih.
+   <div>
+   <p>Ini akan berwarna merah.</p>
+   <section>
+   <p>Ini tidak akan berubah warna.</p>
+   </section>
+   </div>
+
+   Kesimpulan :
+   Gunakan descendant combinator jika ingin menargetkan semua elemen dalam sebuah elemen induk, tidak peduli seberapa dalam mereka berada.
+   Gunakan child combinator jika ingin menargetkan hanya anak langsung dari elemen induk. */
+
+
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto; /* Properti ini mengaktifkan atau menonaktifkan penyesuaian 
+                                  ukuran font secara otomatis agar tetap terlihat jelas dalam berbagai ukuran. */
+    font-weight: 700;
+    font-style: normal; /* Properti font-style digunakan untuk mengatur gaya teks, seperti italic (miring). */
+  }
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    column-gap: 16px;
+}
+
+#about > div {
+    width: 50%;
+}
+
+#about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 72px;
+}
+
+.about-stats-item div {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(66, 125, 234);
+    margin-bottom: 16px;
+}
+
+.about-stats-item {
+    display: flex;
+    flex-direction: column; /* Properti flex-direction digunakan dalam CSS Flexbox untuk menentukan arah utama 
+                               di mana item flex akan ditata dalam container (display: flex). 
+                               "flex-direction" memiliki 4 nilai utama yaitu :
+                               1. row =	Horizontal (kiri ke kanan),	(Default) Item disusun dari kiri ke kanan.
+                               2. row-reverse = Horizontal (kanan ke kiri),	Item disusun dari kanan ke kiri.
+                               3. column = Vertikal (atas ke bawah), Item disusun dari atas ke bawah.
+                               4. column-reverse = Vertikal (bawah ke atas), Item disusun dari bawah ke atas.*/
+    align-items: center;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-header h1 {
+    position: relative;
+}
+
+.service-header h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(./images/accent1.svg);
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 128px;
+    margin-top: 72px;
+}
+
+.service-detail-item {
+    transition:  0.7s;
+    box-shadow: 5px 7px 3px #c7c7c7;
+}
+
+.service-detail-item:hover {
+    transform: scale(1.1); /* Properti transform dalam CSS digunakan untuk mengubah tampilan elemen, 
+                              seperti memindahkan, memutar, memperbesar, atau mendistorsi elemen 
+                              tanpa mempengaruhi tata letak elemen lainnya. */
+}
+
+.service-detail-item:hover img {
+    filter: grayscale(0);
+}
+
+.service-detail-item img {
+    width: 100% ;
+    filter: grayscale(100); /* Properti filter dalam CSS digunakan untuk menerapkan efek visual pada elemen, 
+                            seperti blur, brightness, kontras, dan efek lainnya. Properti ini sering digunakan pada gambar, 
+                            elemen latar belakang, atau elemen HTML lainnya untuk memberikan tampilan yang lebih menarik. */
+}
+
+.service-detail-item p {
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.service-detail-item h2 {
+    padding: 0 16px;
+}
+
+/* .gambar {
+    object-fit: cover;
+} */
+
+#contact h1 {
+    position: relative;
+}
+
+#contact > h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url(./images/accent2.svg);
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 50px;
+}
+
+.contact-detail > div, .contact-detail > form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 30px 32px;
+    height: 400px;
+    margin: 50px 0 0 0;
+}
+
+form h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+form button {
+    border: none;
+    transition: opacity 0.3s ease-in-out 0.2s;
+}
+
+form button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 19px;
+    margin-top: 19px;
+    grid-template-areas: "name subject"
+                         "email phone"
+                         "message message";
+}
+
+#input-name {
+    grid-area: name; /* Atribut grid-area dalam CSS digunakan 
+                        dalam CSS Grid Layout untuk menempatkan 
+                        elemen dalam suatu grid container dengan 
+                        cara yang lebih fleksibel dan mudah dibaca. */
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 19px;
+}
+
+.input-group label {
+    /* margin-bottom:  7px; */
+    font-size: 17px;
+}       
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid rgb(66, 125, 234);
+}
+
+
+footer {
+    padding: 16px 128px;
+    background-color: rgb(66, 125, 234);
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+/* .social-icon {
+    gap: 100px;
+} */
+
+@media only screen and (max-width: 1200px) {
+    .service-detail {
+        gap: 24px;
+    }
+    
+    .contact-detail {
+        gap: 24px;
+    }
+
+    form {
+        height: 500px;
+    }
+
+    .form-group {
+        margin-top: -1px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* a img {
+    transition: transform 5 ease;
+}
+
+a img hover {
+    transform: scale(5);
+} */
+
+@media only screen and (max-width: 992px) {
+    #header, #footer {
+        padding: 16px 32px;
+    }
+    
+    section {
+        padding: 64px 32px;
+    }
+
+    #landing {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #landing > div {
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about > div {
+        width: 100%;
+    }
+
+    .service-detail {
+        gap: 16px;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 64px;
+    }
+
+    .contact-detail form, .contact-detail > div {
+        width: 100%;
+    }
+
+    .contact-detail > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

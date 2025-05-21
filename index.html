@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coder</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+    </style>
+    <!-- Memuat font Montserrat dari Google Fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan halaman dengan file CSS lokal (style.css) yang berisi aturan styling untuk website. -->
+  </head>
+  <body>
+    <header id="header">
+      <!-- Tag <header> digunakan untuk mendefinisikan bagian kepala dari sebuah halaman web atau bagian tertentu dalam dokumen HTML.
+                  Biasanya berisi elemen-elemen seperti: Logo, Judul atau heading (<h1> - <h6>), Navigasi (<nav>), Deskripsi singkat. 
+                  Catatan: <header> bisa digunakan lebih dari satu kali dalam satu halaman, misalnya di dalam <article> atau <section>.
+                  Tidak boleh ditempatkan di dalam <footer> atau <address>. -->
+      <h1 class="h1-header">FLUFYOS</h1>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section id="landing">
+      <!-- Tag <section> digunakan untuk membagi konten dalam sebuah halaman web ke dalam bagian-bagian yang memiliki topik atau tujuan tertentu.
+                   <section> harus memiliki heading (<h1> - <h6>) untuk menjelaskan isi dari bagian tersebut.
+                   Jangan gunakan <section> hanya untuk styling, gunakan jika kontennya memang memiliki keterkaitan tematik. -->
+      <div>
+        <h1>FLUFYOS Company IT</h1>
+        <p>
+          Welcome to our official website, which is a service company engaged in
+          the field of Information Technology and more specifically about
+          website development, applications, and UI/UX design.
+        </p>
+        <div class="button-landing">
+          <a class="btn btn-alt" href="#about">More Info</a>
+          <!-- penamaan class dalam <section> dengan tujuan supaya bisa dipanggil di file CSS/style.css-->
+          <a class="btn" href="#contact">Contact US</a>
+        </div>
+      </div>
+      <br />
+      <div>
+        <img
+          src="images/gambarbackgroundcompany2.jpg"
+          alt="gambarbackgroundcompany2"
+          width="500px"
+        />
+        <!-- tag untuk menmpilkan gambar, 
+                                src (source) digunakan untuk menentukan sumber atau lokasi file gambar yang akan ditampilkan. 
+                                Dan alt digunakan untuk memberikan teks alternatif jika gambar tidak bisa dimuat atau untuk 
+                                membantu aksesibilitas bagi pengguna dengan keterbatasan penglihatan. -->
+      </div>
+    </section>
+    <section id="about">
+      <div>
+        <img
+          src="images/gambaranimasipenjualan.jpg"
+          alt="gambaranimasipenjualan"
+          width="500px"
+        />
+      </div>
+      <div>
+        <h1>We are the best in out field</h1>
+        <p>
+          For the last 5 years we always give the best to our client and we will
+          always be the best
+        </p>
+        <div id="about-stats">
+          <div class="about-stats-item">
+            <h1>100+</h1>
+            <div></div>
+            <p>Experts</p>
+          </div>
+          <div class="about-stats-item">
+            <h1>300+</h1>
+            <div></div>
+            <p>Clients</p>
+          </div>
+          <div class="about-stats-item">
+            <h1>500+</h1>
+            <div></div>
+            <p>Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service">
+      <div class="service-header">
+        <div>
+          <h1>Our Services</h1>
+          <p>We have the best service to solve your problem</p>
+        </div>
+        <a href="#contact" class="btn">Contact US</a>
+      </div>
+      <div class="service-detail">
+        <div class="service-detail-item">
+          <img src="images/gambarwebdevelopment1.jpg" alt="gambarilustrasiweb"
+          width="200px" height= />
+          <h2>Web Application</h2>
+          <p>
+            Web application can be your best and easiest solution for your
+            problem that can be access anywhere
+          </p>
+        </div>
+        <div class="service-detail-item">
+          <img
+            src="images/gambarwebdevelopment3.jpg"
+            alt="gambarilustrasiuiux"
+            width="200px"
+            height="163px"
+          />
+          <h2>UI/UX Design</h2>
+          <p>
+            We create the best design based on problem we analyze and give the
+            best experience to user
+          </p>
+        </div>
+        <div class="service-detail-item">
+          <img src="images/gambarwebdevelopment2.jpg" alt="gambarilustrasiweb1"
+          width="200px" height= />
+          <h2>Mobile Application</h2>
+          <p>
+            Mobile application can be your best solution for the easy access
+            application where everybody have a phone
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <p>Get in touch with us now and get your problem solve</p>
+      <div class="contact-detail">
+        <form action="">
+          <h1>Tell us your problem</h1>
+          <div class="form-group">
+            <div id="input-name" class="input-group">
+              <label for="">Name</label>
+              <input type="text" placeholder="Your Name" />
+            </div>
+            <div id="input-subject" class="input-group">
+              <label for="">Subject</label>
+              <input type="text" placeholder="..." />
+            </div>
+            <div id="input-email" class="input-group">
+              <label for="">Email</label>
+              <input type="email" placeholder="example@mail.com" />
+            </div>
+            <div id="input-phone" class="input-group">
+              <label for="">Phone Number</label>
+              <input type="tel" placeholder="08123....." />
+            </div>
+            <div id="input-message" class="input-group">
+              <label for="">Message</label>
+              <input type="text" placeholder="..." />
+            </div>
+          </div>
+          <button class="btn">Submit</button>
+        </form>
+        <div>
+          <h1>Our Location</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666307543373!2d106.82458402362224!3d-6.175408343811994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1742080179389!5m2!1sid!2sid"
+            width="450"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div>
+        <h1>FLUFYOS</h1>
+        <p>
+          Software house based in Indonesia expert in UI/UX design, web apps,
+          and mobile apps
+        </p>
+      </div>
+      <div class="social-icon">
+        <a href="https://github.com/arvinr16" target="_blank"
+          ><img src="images/logogithub1.png" alt="logogithub1" width="50px"
+        /></a>
+        <a href="mailto:arviansyahyk@gmail.com" target="_blank"
+          ><img src="images/logogmail.png" alt="logogmail" width="50px"
+        /></a>
+        <a href="https://www.instagram.com/instagram/" target="_blank"
+          ><img src="images/logoinstagram.png" alt="logoinstagram" width="50px"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
