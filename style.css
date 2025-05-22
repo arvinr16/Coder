@@ -443,14 +443,20 @@ footer p {
     color: white;
 }
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* .social-icon {
     gap: 100px;
 } */
+
+@media only screen and (min-width: 1440px) {
+    .img-animasipenjualan {
+        padding-left: 150px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .service-detail {
@@ -470,6 +476,11 @@ img {
         display: flex;
         flex-direction: column;
     }
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
 }
 /* a img {
     transition: transform 5 ease;
@@ -478,6 +489,31 @@ img {
 a img hover {
     transform: scale(5);
 } */
+
+@media only screen and (min-width: 992px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #about-stats {
+        margin: 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .img-animasipenjualan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 550px;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     #header, #footer {
