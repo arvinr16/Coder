@@ -626,7 +626,7 @@ a img hover {
     }
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 535px) {
     .service-header {
         flex-direction: column;
         align-items: flex-start;
