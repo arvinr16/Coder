@@ -533,7 +533,7 @@ a img hover {
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 625px) {
     .service-detail {
         display: grid;
         grid-template-columns: 1fr; /* Merubah jadi 1 kolom saat mobile */
@@ -550,6 +550,15 @@ a img hover {
         margin-bottom: 15px;
     }
     
+}
+
+@media only screen and (max-width: 559px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+    }
 }
 
 @media only screen and (max-width: 485px) {
@@ -587,6 +596,62 @@ a img hover {
 
 @media only screen and (max-width: 355px) {
     #header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 10px 32px;
+    height: 500px;
+    margin: 50px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 324px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 10px 32px;
+    height: 500px;
+    margin: 50px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 323px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 10px 32px;
+    height: 550px;
+    margin: 50px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 271px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 244px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    nav {
+        display: flex;
         flex-direction: column;
     }
 }
