@@ -457,15 +457,24 @@ footer p {
         width: 700px;
         margin-left: 77px;
     }
+
+    .img-company {
+        width: 500px;
+        margin-left: 75px;
+    }
+
+    .div-location {
+        padding-left: 100px;
+    }
 }
 
 @media only screen and (min-width: 1246px) {
     .div-location {
-        padding-left: 50px
+        margin-left: 50px
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px) {
     .service-detail {
         gap: 24px;
     }
@@ -626,7 +635,7 @@ a img hover {
     }
 }
 
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 803px) {
     .service-header {
         flex-direction: column;
         align-items: flex-start;
