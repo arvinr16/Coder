@@ -563,3 +563,17 @@ a img hover {
         justify-content: center;
     }
 }
+
+@media only screen and (max-width: 387px) {
+    #about-stats {
+        display: flex; /* Ini yang membuat 'flex-direction: column' bekerja */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 70px; /* Memberi jarak pada item */
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    
+}

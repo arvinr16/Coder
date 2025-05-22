@@ -1,99 +1,33 @@
-.service-detail {
+#about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 128px;
+    text-align: center;
     margin-top: 72px;
 }
 
-.service-detail-item {
-    transition:  0.7s;
-    box-shadow: 5px 7px 3px #c7c7c7;
+.about-stats-item div {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(66, 125, 234);
+    margin-bottom: 16px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .service-detail {
-        gap: 24px;
-    }
-    
-    .contact-detail {
-        gap: 24px;
-    }
+.about-stats-item {
+    display: flex;
+    flex-direction: column; /* Properti flex-direction digunakan dalam CSS Flexbox untuk menentukan arah utama 
+                               di mana item flex akan ditata dalam container (display: flex). 
+                               "flex-direction" memiliki 4 nilai utama yaitu :
+                               1. row =	Horizontal (kiri ke kanan),	(Default) Item disusun dari kiri ke kanan.
+                               2. row-reverse = Horizontal (kanan ke kiri),	Item disusun dari kanan ke kiri.
+                               3. column = Vertikal (atas ke bawah), Item disusun dari atas ke bawah.
+                               4. column-reverse = Vertikal (bawah ke atas), Item disusun dari bawah ke atas.*/
+    align-items: center;
+}
 
-    form {
-        height: 500px;
-    }
-
-    .form-group {
-        margin-top: -1px;
-        display: flex;
+@media only screen and (max-width: 387px) {
+    #about-stats {
         flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    #header, #footer {
-        padding: 16px 32px;
-    }
-    
-    section {
-        padding: 64px 32px;
-    }
-
-    #landing {
-        flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
         text-align: center;
     }
-
-    #landing > div {
-        width: 100%;
-    }
-
-    #about {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    #about > div {
-        width: 100%;
-    }
-
-    .service-detail {
-        gap: 16px;
-    }
-
-    .contact-detail {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 64px;
-    }
-
-    .contact-detail form, .contact-detail > div {
-        width: 100%;
-    }
-
-    .contact-detail > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* Ini media quert yang digunakan untuk kebutuhan responsive pada service-detail*/
-@media only screen and (max-width: 580px) {
-    .service-detail {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-img {
-        width: 90%;
-        margin-bottom: 15px;
-    }
-    
 }
