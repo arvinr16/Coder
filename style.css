@@ -584,3 +584,9 @@ a img hover {
         margin-top: 25px;
     }
 }
+
+@media only screen and (max-width: 355px) {
+    #header {
+        flex-direction: column;
+    }
+}
