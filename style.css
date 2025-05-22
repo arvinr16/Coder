@@ -575,5 +575,12 @@ a img hover {
 }
 
 @media only screen and (max-width: 365px) {
+    .service-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
+    .btn-contact-detail {
+        margin-top: 25px;
+    }
 }
