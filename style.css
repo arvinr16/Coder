@@ -454,7 +454,14 @@ footer p {
 
 @media only screen and (min-width: 1440px) {
     .img-animasipenjualan {
-        padding-left: 150px;
+        width: 700px;
+        margin-left: 77px;
+    }
+}
+
+@media only screen and (min-width: 1246px) {
+    .div-location {
+        padding-left: 50px
     }
 }
 
