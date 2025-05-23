@@ -450,63 +450,37 @@ footer p {
 
 /* .social-icon {
     gap: 100px;
-} */
+    } */
 
-@media only screen and (min-width: 1440px) {
-    .img-animasipenjualan {
-        width: 700px;
-        margin-left: 77px;
+@media only screen and (max-width: 244px) {
+    h1 {
+        font-size: 35px;
     }
 
-    .img-company {
-        width: 500px;
-        margin-left: 75px;
-    }
-
-    .div-location {
-        padding-left: 100px;
-    }
-}
-
-@media only screen and (min-width: 1246px) {
-    .div-location {
-        margin-left: 50px
-    }
-}
-
-@media only screen and (max-width: 1440px) {
-    .service-detail {
-        gap: 24px;
-    }
-    
-    .contact-detail {
-        gap: 24px;
-    }
-
-    form {
-        height: 500px;
-    }
-
-    .form-group {
-        margin-top: -1px;
+    nav {
         display: flex;
         flex-direction: column;
     }
+}
 
-    img {
-    max-width: 100%;
-    height: auto;
+@media only screen and (max-width: 271px) {
+    h1 {
+        font-size: 40px;
     }
 }
-/* a img {
-    transition: transform 5 ease;
+
+@media only screen and (max-width: 323px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 10px 32px;
+    height: 550px;
+    margin: 50px 0 0 0;
+    }
 }
 
-a img hover {
-    transform: scale(5);
-} */
-
-@media only screen and (max-width: 1124px) {
+@media only screen and (max-width: 324px) {
     form {
     display: flex;
     flex-direction: column;
@@ -517,28 +491,95 @@ a img hover {
     }
 }
 
-@media only screen and (min-width: 992px) {
-    #about {
+@media only screen and (max-width: 387px) {
+    #about-stats {
+        display: flex; /* Ini yang membuat 'flex-direction: column' bekerja */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 70px; /* Memberi jarak pada item */
+    }
+
+    .button-landing {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
     }
 
-    #about-stats {
+    .btn-alt {
         margin: 0;
     }
+}
 
-    .about-text {
-        text-align: center;
+@media only screen and (max-width: 475px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 10px 32px;
+    height: 500px;
+    margin: 50px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .map-iframe {
+        width: 80vw; /* 90% dari lebar layar */
+        height: 350px /* Menyesuaikan tinggi agar tetap proporsional */
+    }
+    
+    .location-detail {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 577px) {
+    #header {
+        flex-direction: column;
     }
 
-    .img-animasipenjualan {
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+    
+    /* nav {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        width: 550px;
+        margin-right: 50px;
+    } */
+}
+
+@media only screen and (max-width: 625px) {
+    .service-detail {
+        display: grid;
+        grid-template-columns: 1fr; /* Merubah jadi 1 kolom saat mobile */
+        row-gap: 24px;
+        padding: 0 16px;
+    }
+
+    .service-detail-item {
+        text-align: center; /* Supaya text ditengah */
+    }
+    .service-img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 803px) {
+    .service-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn-contact-detail {
+        margin-top: 25px;
     }
 }
 
@@ -596,133 +637,104 @@ a img hover {
     }
 }
 
-@media only screen and (max-width: 625px) {
-    .service-detail {
-        display: grid;
-        grid-template-columns: 1fr; /* Merubah jadi 1 kolom saat mobile */
-        row-gap: 24px;
-        padding: 0 16px;
-    }
-
-    .service-detail-item {
-        text-align: center; /* Supaya text ditengah */
-    }
-    .service-img {
-        width: 90%;
-        height: auto;
-        margin-bottom: 15px;
-    }
-    
-}
-
-@media only screen and (max-width: 577px) {
-    #header {
-        flex-direction: column;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        margin-right: 10px;
-    }
-    
-    /* nav {
+@media only screen and (min-width: 992px) {
+    #about {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-right: 50px;
-    } */
-}
-
-@media only screen and (max-width: 485px) {
-    .map-iframe {
-        width: 80vw; /* 90% dari lebar layar */
-        height: 350px /* Menyesuaikan tinggi agar tetap proporsional */
+        align-items: center;
+        padding: 20px;
     }
-    
-    .location-detail {
-        display: flex;
-        justify-content: center;
-    }
-}
 
-@media only screen and (max-width: 387px) {
     #about-stats {
-        display: flex; /* Ini yang membuat 'flex-direction: column' bekerja */
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 70px; /* Memberi jarak pada item */
-    }
-
-    .button-landing {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn-alt {
         margin: 0;
     }
-}
 
-@media only screen and (max-width: 803px) {
-    .service-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .btn-contact-detail {
-        margin-top: 25px;
-    }
-}
-
-@media only screen and (max-width: 475px) {
-    form {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid rgb(66, 125, 234);
-    padding: 10px 32px;
-    height: 500px;
-    margin: 50px 0 0 0;
-    }
-}
-
-@media only screen and (max-width: 324px) {
-    form {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid rgb(66, 125, 234);
-    padding: 10px 32px;
-    height: 500px;
-    margin: 50px 0 0 0;
-    }
-}
-
-@media only screen and (max-width: 323px) {
-    form {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid rgb(66, 125, 234);
-    padding: 10px 32px;
-    height: 550px;
-    margin: 50px 0 0 0;
-    }
-}
-
-@media only screen and (max-width: 271px) {
-    h1 {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 244px) {
-    h1 {
-        font-size: 35px;
+    .about-text {
+        text-align: center;
     }
 
-    nav {
+    .img-animasipenjualan {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 10px 32px;
+    height: 500px;
+    margin: 50px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1246px) {
+    .div-location {
+        margin-left: 50px
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .service-detail {
+        gap: 24px;
+    }
+    
+    .contact-detail {
+        gap: 24px;
+    }
+
+    form {
+        height: 500px;
+    }
+
+    .form-group {
+        margin-top: -1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+}
+/* a img {
+    transition: transform 5 ease;
+}
+
+a img hover {
+    transform: scale(5);
+} */
+
+@media only screen and (min-width: 1440px) {
+    .img-animasipenjualan {
+        width: 700px;
+        margin-left: 77px;
+    }
+    
+    .img-company {
+        width: 500px;
+        margin-left: 75px;
+    }
+    
+    .div-location {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .img-company {
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .img-company {
+        margin-left: 550px;
     }
 }
