@@ -506,6 +506,17 @@ a img hover {
     transform: scale(5);
 } */
 
+@media only screen and (max-width: 1124px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 125, 234);
+    padding: 10px 32px;
+    height: 500px;
+    margin: 50px 0 0 0;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     #about {
         display: flex;
@@ -604,13 +615,23 @@ a img hover {
     
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 577px) {
+    #header {
+        flex-direction: column;
+    }
+
     nav {
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+    
+    /* nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-right: 50px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 485px) {
@@ -653,18 +674,6 @@ a img hover {
     
     .btn-contact-detail {
         margin-top: 25px;
-    }
-}
-
-@media only screen and (max-width: 355px) {
-    #header {
-        flex-direction: column;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        margin-right: 10px;
     }
 }
 
