@@ -768,3 +768,10 @@ a img hover {
         margin-left: 270px;
     }
 }
+
+@media only screen and (min-width: 2600px) {
+    .img-animasipenjualan {
+        margin-left: 300px;
+    }
+
+}
