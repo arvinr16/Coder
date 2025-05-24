@@ -491,26 +491,6 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 387px) {
-    #about-stats {
-        display: flex; /* Ini yang membuat 'flex-direction: column' bekerja */
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 70px; /* Memberi jarak pada item */
-    }
-
-    .button-landing {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn-alt {
-        margin: 0;
-    }
-}
-
 @media only screen and (max-width: 475px) {
     form {
     display: flex;
@@ -531,6 +511,26 @@ footer p {
     .location-detail {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    #about-stats {
+        display: flex; /* Ini yang membuat 'flex-direction: column' bekerja */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px; /* Memberi jarak pada item */
+    }
+
+    .button-landing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-alt {
+        margin: 0;
     }
 }
 
