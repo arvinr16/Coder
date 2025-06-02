@@ -432,7 +432,6 @@ form button:hover {
     border-bottom: 2px solid rgb(66, 125, 234);
 }
 
-
 footer {
     padding: 16px 128px;
     background-color: rgb(66, 125, 234);
@@ -451,6 +450,21 @@ footer p {
 /* .social-icon {
     gap: 100px;
     } */
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.social-icon > a {
+    transition: 0.7s;
+}
+
+.social-icon > a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 @media only screen and (max-width: 1440px) {
     .service-detail {
